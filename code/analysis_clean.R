@@ -1,3 +1,13 @@
+########################################################################################################################################################
+#
+# Urinary metabolites of polycyclic aromatic hydrocarbons and short-acting beta agonist or systemic corticosteroid asthma medication use within NHANES
+# Date: 4/27/2022
+# Programmer: Stephen Uong
+# Contributors: Jeanette Stingone
+#
+########################################################################################################################################################
+
+
 ####################################
 ########## LOAD LIBRARIES ########## 
 ####################################
