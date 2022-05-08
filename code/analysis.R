@@ -341,7 +341,7 @@ broom::tidy(mod7b_race_creat, exp = TRUE, conf.int = TRUE)
 mod7b_asthma_race_creat <- svyglm(as.formula(paste0("med_short ~ ratio_pahadjz_race + creat + age + gender + race + pir + insurance + cot")), family = family_expr, design = asthma_pahas_design)
 broom::tidy(mod7b_asthma_race_creat, exp = TRUE, conf.int = TRUE)
 
-### Sensitivity analysis-- race adjustment in creatinine
+### Sensitivity analysis-- without survey design
   # results same
 mod7b_no_survey_creat <- svyglm(as.formula(paste0("med_short ~ ratio_pahadjz_no_survey + creat + age + gender + race + pir + insurance + cot")), family = family_expr, design = pahas_design)
 broom::tidy(mod7b_no_survey_creat, exp = TRUE, conf.int = TRUE)

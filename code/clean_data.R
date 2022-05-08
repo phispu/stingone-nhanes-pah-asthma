@@ -407,8 +407,16 @@ xtabs(~ med_long + becl + bud + flun + flut + tria + crom + mont + zaf + form + 
 
 ### MERGE with main data
 pahas <- pahas_recode %>% 
-  left_join(rx_clean, by = "SEQN")
-
+  left_join(rx_clean, by = "SEQN") %>%
+  dplyr::select(SEQN,yr,SDMVPSU, SDMVSTRA, wt_lab,
+                age,agecat,agecat2,agecat4,gender,race,pir,insurance,bmi,cot,cotcat,
+                pah,pahz,ratio_pah,ratio_pahz,creat,creat_log,asthma,
+                creat_p,creat_race_p,creat_no_survey_p,creat_resid,
+                ratio_pahadj,ratio_pahadjz,
+                ratio_pahadj_race,ratio_pahadjz_race,ratio_pahadj_no_survey,ratio_pahadjz_no_survey,
+                ratio_pahq,ratio_pahadjq,
+                med_short,med_short_steroid,med_short_steroid_no,med_long,
+                alb,lalb,pbut,mprediso,prediso,pred,dex,becl,bud,flun,flut,tria,crom,mont,zaf,form,sal,theo,mom,nedo,oma)
 
 #########################################
 ########## EXPORT CLEANED DATA ##########
