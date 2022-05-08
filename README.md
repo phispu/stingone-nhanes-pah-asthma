@@ -42,8 +42,15 @@ We used the following data from multiple waves (2005-2016) of the [U.S. National
 - **Examination**: BMI (BMX)
 - **Health Insurance** (HIQ)
 
+Our final analytical dataset `nhanes-pah-asthma-analysis.RDS` can be found in [`data/processed`](https://github.com/phispu-columbia/stingone-nhanes-pah-asthma/tree/main/data/processed).
+
+- We have included a data dictionary `nhanes-pah-asthma-analysis-DD.xlsx` in the same folder.
+
 ## 3. Code and Instructions
-We used the following code to complete our anlaysis: `code/analysis_clean.R`
+We used the following code to complete our analysis: 
+
+- `code/clean_data.R`: Merge, clean, and prepare analytical dataset.
+- `code/analysis.R`: Complete analyses.
 
 ## 4. Cloning this Repository with RStudio
 Below are steps to clone this repository to your local device with RStudio. Please refer to this [link](https://resources.github.com/github-and-rstudio/) for more information about using git in RStudio.
